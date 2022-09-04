@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>정용성 포트폴리오</title>
+  <link rel="shortcut icon" href="images/header/cactus_favicon.svg" type="image/icon">
+  <link rel="stylesheet" href="css/reset.css" type="text/css">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <script src="https://kit.fontawesome.com/a60ed959b1.js" crossorigin="anonymous"></script>
+  <script src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+  <div id="wrap">
+    <!-- header -->
+    <header id="headerbar">
+      <div class="headerbar__box">
+        <h1 class="headerbar__logo">
+          <a href="#">
+            <i class="fa-brands fa-hotjar"></i>
+            <span>Cactus</span>
+          </a>
+        </h1>
+        <div class="headerbar__contents">
+          <div class="headerbar__contact">
+            <span class="contactshot">Contact</span>
+          </div>
+        </div>
+        <div class="headerbar__contents">
+          <div class="headerbar__git">
+            <a href="https://github.com/acet09" target="_blank">
+              <i class="fa-brands fa-github"></i>
+              <span class="m-text">Github</span>
+            </a>
+          </div>
+          <div class="headerbar__blog">
+            <a href="https://blog.naver.com/ysjungman" target="_blank">
+              <img src="images/header/블로그2.png" alt="naver-blog">
+              <span class="m-text">Blog</span>
+            </a>
+          </div>
+        </div>
+
+        <button class="gnb__toggle-btn" onclick="slide();">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+      </div>
+      <nav id="gnb" class="gnb">
+        <ul class="gnb__list">
+          <li class="gnb__list__item active" data-link="#home">HOME</li>
+          <li class="gnb__list__item" data-link="#about">ABOUT</li>
+          <li class="gnb__list__item" data-link="#skills">SKILLS</li>
+          <li class="gnb__list__item" data-link="#work">WORK</li>
+          <li class="gnb__list__item" data-link="#contact">CONTACT</li>
+        </ul>
+      </nav>
+      
+    </header>
+
+    <!-- home -->
+    <section id="home" class="section__cover">
+      <h2 class="txt-ir">home</h2>
+      <div class="home__box">
+        <div class="home__content">
+          <img src="images/section/home/cactus.png" alt="cactus-profile" class="home__main">
+        </div>
+        <div class="home__content">
+          <div class="home__title">안녕하세요.<br>만나서 반갑습니다.</div>
+          <p class="home__txt">#긍정적 &nbsp;&nbsp;#꾸준함 &nbsp;&nbsp;#시간약속</p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- about -->
+    <section id="about" class="section__cover">
+      <h2 class="about__title section__title">About me</h2>
+      <div class="about__box section__box">
+        <div class="about__content">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <div class="about__list">
+            <h3>-연희직업전문학교-</h3>
+            <p>UIUX & 웹퍼블리셔[22.02.21~22.07.27]</p>
+          </div>
+          <strong>Graphic, HTML, CSS, Js</strong>
+        </div>
+        <div class="about__content">
+          <i class="fa-solid fa-address-card"></i>
+          <div class="about__list">
+            <p>포토샵GTQ1급</p>
+            <p>웹디자인기능사</p>
+          </div>
+          <strong>코딩 관련 자격증 공부 중입니다.</strong>
+        </div>
+        <div class="about__content">
+          <i class="fa-solid fa-desktop"></i>
+          <div class="about__list">
+            <h3>-드림코딩-</h3>
+            <p>포트폴리오 웹사이트 클론코딩</p>
+          </div>
+          <div class="about__list">
+            <h3>-Udemy-</h3>
+            <p>The Web Developer 부트캠프</p>
+            <p>Flutter & Dart - 완전한 안내서</p>
+            <p>React 완벽 가이드</p>
+          </div>
+          <strong>인터넷 강의로 개인 공부 중입니다.</strong>
+        </div>
+      </div>
+    </section>
+    
+    <!-- skills -->
+    <section id="skills" class="section__cover">
+      <h2 class="skills__title section__title">Skills</h2>
+      <div class="skills__box section__box">
+        <div class="skills__contents">
+          <div class="skills__left">
+            <h3 class="skills__title">Skills</h3>
+            <div class="skills__list html">
+              <div class="skills__item item1">
+                <div class="skills__keep">
+                  <i class="fa-brands fa-html5"></i>
+                  <span>HTML</span>
+                </div>
+                <span>80%</span>
+              </div>
+              <div class="skills__bar bar1">
+                <div class="skills__value"></div>
+              </div>
+            </div>
+            <div class="skills__list css">
+              <div class="skills__item item2">
+                <div class="skills__keep">
+                  <i class="fa-brands fa-css3"></i>
+                  <span>CSS</span>
+                </div>
+                <span>70%</span>
+              </div>
+              <div class="skills__bar bar2">
+                <div class="skills__value"></div>
+              </div>
+            </div>
+            <div class="skills__list js">
+              <div class="skills__item item3">
+                <div class="skills__keep">
+                  <i class="fa-brands fa-js"></i>
+                  <span>Javascript</span>
+                </div>
+                <span>50%</span>
+              </div>
+              <div class="skills__bar bar3">
+                <div class="skills__value"></div>
+              </div>
+            </div>
+            <div class="skills__list React">
+              <div class="skills__item item3">
+                <div class="skills__keep">
+                  <i class="fa-brands fa-react"></i>
+                  <span>React</span>
+                </div>
+                <span>20%</span>
+              </div>
+              <div class="skills__bar bar3">
+                <div class="skills__value"></div>
+              </div>
+            </div>
+            <div class="skills__list graphic">
+              <div class="skills__item item4">
+                <div class="skills__keep">
+                  <i class="fa-solid fa-palette"></i>
+                  <span>Graphic</span>
+                </div>
+                <span>30%</span>
+              </div>
+              <div class="skills__bar bar4">
+                <div class="skills__value"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skills__right">
+            <div class="skills__list">
+              <h3 class="skills__title">Tools</h3>
+              <ul>
+                <li>Visual studio code</li>
+                <li>Intelli J</li>
+                <li>Android Studio</li>
+                <li>Photoshop</li>
+                <li>Illustrator</li>
+              </ul>
+            </div>
+            <div class="skills__list">
+              <h3 class="skills__title">Etc</h3>
+              <ul>
+                <li>C</li>
+                <li>React</li>
+                <li>Flutter</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- work -->
+    <section id="work" class="section__cover">
+      <h2 class="work__title section__title">Wokr</h2>
+      <div class="work__box section__box">
+        <div class="work__content">
+
+          <div class="work__button">
+            <button class="work__btns active" data-filter="all">All</button>
+            <button class="work__btns" data-filter="oneday">1Day, 1Page</button>
+            <button class="work__btns" data-filter="shot">Shotcode</button>
+            <button class="work__btns" data-filter="port">Portfolio</button>
+            <button class="work__btns" data-filter="lab">실험실</button>
+          </div>
+
+          <div class="work__list">
+              <div class="bowl__title">
+                <p class="work__name select" data-type="all">-All-</p>
+                <p class="work__name" onclick="window.open('https://www.youtube.com/channel/UCyagzqY2QuZmi-k_E1o_wlg')" data-type="oneday">-<i class="fa-brands fa-youtube"></i>제작과정-</p>                
+                <p class="work__name" data-type="shot">-코드 모음집-</p>
+                <p class="work__name" data-type="port">-자체 제작-</p>
+                <p class="work__name" data-type="lab">-실험실-</p>
+              </div>    
+              
+              <div class="bowl">
+                <div class="bowl__item" data-type="oneday">
+                  <div class="bowl__con">
+                    <h3>미원</h3>
+                    <a href="#">기획서</a>
+                    <a href="https://www.miwon.co.kr/" target="_blank">원본</a>
+                    <a href="#">클론코딩 </a>
+                    <a href="#">git</a>
+                  </div>
+                  <img src="images/section/work/oneday/Daesang_miwon.png" alt="Daesang-miwon">
+                </div>
+                <div class="bowl__item" data-type="oneday">
+                  <div class="bowl__con">
+                    <h3>코카콜라</h3>
+                    <a href="#">기획서</a>
+                    <a href="#">원본</a>
+                    <a href="#">클론코딩 </a>
+                    <a href="#">git</a>
+                  </div>
+                </div>
+                <div class="bowl__item" data-type="oneday">
+                  <div class="bowl__con">
+                    <h3>대한병원</h3>
+                    <a href="#">기획서</a>
+                    <a href="#">원본</a>
+                    <a href="#">클론코딩 </a>
+                    <a href="#">git</a>
+                  </div>
+                </div>
+                <div class="bowl__item" data-type="oneday">
+                  <div class="bowl__con">
+                    <h3>컴파스커피</h3>
+                    <a href="#">기획서</a>
+                    <a href="#">원본</a>
+                    <a href="#">클론코딩 </a>
+                    <a href="#">git</a>
+                  </div>
+                </div>
+                <div class="bowl__item" data-type="oneday">
+                  <div class="bowl__con">
+                    <h3>네이버</h3>
+                    <a href="#">기획서</a>
+                    <a href="#">원본</a>
+                    <a href="#">클론코딩 </a>
+                    <a href="#">git</a>
+                  </div>
+                </div>
+                <div class="bowl__item" data-type="shot">
+                  <div class="bowl__con">
+                    <h3>Slide</h3>
+                    <a href="#">Codepen</a>
+                  </div>
+                </div>
+                <div class="bowl__item" data-type="shot">
+                  <div class="bowl__con">
+                    <h3>Pop</h3>
+                    <a href="#">Codepen</a>
+                  </div>
+                </div>
+                <div class="bowl__item" data-type="shot">
+                  <div class="bowl__con">
+                    <h3>Tab</h3>
+                    <a href="#">Codepen</a>
+                  </div>
+                </div>
+                <div class="bowl__item" data-type="shot">
+                  <div class="bowl__con">
+                    <h3>scrolls</h3>
+                    <a href="#">Codepen</a>
+                  </div>
+                </div>
+                <div class="bowl__item" data-type="shot">
+                  <div class="bowl__con">
+                    <h3>Animation</h3>
+                    <a href="https://codepen.io/acet09/pen/jOzgjqR" target="_blank">Codepen</a>
+                  </div>
+                </div>
+                <div class="bowl__item" data-type="port">
+                  <div class="bowl__con">
+                    <h3>음식</h3>
+                    <a href="#">기획서</a>
+                    <a href="#">이동하기</a>
+                    <a href="#">git</a>
+                  </div>
+                </div>
+                <div class="bowl__item" data-type="port">
+                  <div class="bowl__con">
+                    <h3>악기쇼핑몰</h3>
+                    <a href="#">기획서</a>
+                    <a href="#">이동하기</a>
+                    <a href="#">git</a>
+                  </div>
+                </div>
+                <div class="bowl__item" data-type="port">
+                  <div class="bowl__con">
+                    <h3>병원홍보</h3>
+                    <a href="#">기획서</a>
+                    <a href="#">이동하기</a>
+                    <a href="#">git</a>
+                  </div>
+                </div>
+                <div class="bowl__item" data-type="lab">
+                  <div class="bowl__con">
+                    <h3>React 웹사이트 제작</h3>
+                    <a href="#">기획서</a>
+                    <a href="#">이동하기</a>
+                    <a href="#">git</a>
+                  </div>
+                </div>
+                <div class="bowl__item" data-type="lab">
+                  <div class="bowl__con">
+                    <h3>Android 앱 제작,배포</h3>
+                    <a href="#">기획서</a>
+                    <a href="#">GooglePlay</a>
+                    <a href="#">git</a>
+                  </div>
+                </div>
+                <div class="bowl__item" data-type="lab">
+                  <div class="bowl__con">
+                    <h3>DB 연동</h3>
+                    <a href="#">기획서</a>
+                    <a href="#">이동하기</a>
+                    <a href="#">git</a>
+                  </div>
+                </div>
+              </div>        
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- section#contact -->
+    <section id="contact" class="section__cover">
+      <h2 class="contact__title section__title">Contact me</h2>
+      <div class="contact__box section__box">
+        <div class="contact__content email__link">
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ysjungman@gmail.com" target="_blank">
+            <i class="fa-solid fa-envelope"></i>
+            <p>E-mail</p>
+          </a>
+        </div>
+        <div class="contact__list">
+          <div class="contact__content github__link">
+            <a href="https://github.com/acet09" target="_blank">
+              <i class="fa-brands fa-github"></i>
+              <p>Github</p>
+            </a>
+          </div>
+          <div class="contact__content blog__link">
+            <a href="https://blog.naver.com/ysjungman" target="_blank">
+              <img src="images/header/블로그2.png" alt="naver-blog">
+              <p>Blog</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer id="footer__area">
+      <address class="footer__address">
+        <i class="footer__icon">🎋</i>
+        2022 CACTUS's SANDLAND
+      </address>
+    </footer>
+
+    <!-- Arrow Up-->
+    <button class="arrow-up">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+  </div>
+</body>
+
+</html>
