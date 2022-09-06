@@ -28,15 +28,11 @@ headerscroll.addEventListener('click', (event) => {
   scrollIntoViews(target);
 });
 
-
-
 //gnb slide
 const elem = document.getElementById("gnb");
 function slide() {
   elem.classList.toggle('open');
 }
-
-
 
 // header #contact shotcut
 const contactshot = document.querySelector('.contactshot');
@@ -103,9 +99,47 @@ workName.forEach((workNum) => {
   });
 });
 
+// work__popup toggle
+const toggleBtn = document.querySelectorAll('.toggle--btn');
+const toggleClose = document.querySelector('.fa-xmark');
+const toggleBg = document.querySelector('.toggle--bg'); 
+
+toggleBtn.forEach(trigger => {
+  trigger.addEventListener('click', (e) => {
+    e.preventDefault()
+    const triggerData = trigger.dataset.trigger     
+    const triggerSelect = document.querySelector(`[data-name="${triggerData}"]`);
+    const triggerBody = document.querySelector('.work__popup');    
+    const windowscrollLock = document.getElementById('body');
+
+    triggerSelect.classList.add('is--visible');
+    triggerBody.classList.add('is--visible');
+    toggleBg.classList.add('is-blacked-out');
+    windowscrollLock.style.overflow = 'hidden'
+
+    triggerSelect.querySelector('.fa-xmark').addEventListener('click', () => {
+      triggerSelect.classList.remove('is--visible');
+      toggleBg.classList.remove('is-blacked-out');
+      triggerBody.classList.remove('is--visible');      
+      windowscrollLock.style.overflow = 'auto'
+    });
+
+    toggleBg.addEventListener('click', () => {
+      triggerSelect.classList.remove('is--visible');
+      toggleBg.classList.remove('is-blacked-out');
+      triggerBody.classList.remove('is--visible');      
+      windowscrollLock.style.overflow = 'auto'
+    });  
+  });
+});
+
 
 //selector utility function
 function scrollIntoViews(selector) {  
   const scrollTo = document.querySelector(selector); 
   scrollTo.scrollIntoView({behavior: "smooth"});
 }
+
+
+
+
