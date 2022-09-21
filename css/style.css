@@ -679,6 +679,7 @@
 #work .fa-floppy-disk{
   color: var(--fc-sub3);
   font-size: var(--fs-25);
+  margin-right: 5px;
 }
 
 #work .popup--btn{
@@ -686,17 +687,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 15px;
   background-color: transparent;
-}
-
-#work .popup--btn p{
-  margin-left: 5px;
-  color: var(--fc-sub2);
-  font-size: var(--fs-18);
   transition: color .3s ease-in-out;
 }
 
-#work .popup--btn:hover p{
+#work .popup--btn:hover{
   color: var(--c-sub1);
 }
 
@@ -705,6 +701,7 @@
   cursor: pointer;
   transition: color .2s ease-in-out;
 }
+
 #work .fa-xmark:hover{  
   color: var(--c-sub1);
   overflow: auto;
