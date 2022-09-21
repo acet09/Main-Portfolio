@@ -10,10 +10,11 @@
   <link rel="stylesheet" href="css/reset.css" type="text/css">
   <link rel="stylesheet" href="css/style.css" type="text/css">
   <script src="https://kit.fontawesome.com/a60ed959b1.js" crossorigin="anonymous"></script>
+  <script src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="js/main.js" defer></script>
 </head>
 
-<body id="body">  
+<body id="body">
   <!-- toggle Background -->
   <div class="toggle--bg"></div>
   <div id="wrap">
@@ -235,7 +236,7 @@
               <div class="bowl__item" data-type="oneday">
                 <img src="images/section/work/oneday/Anyang.png" alt="Anyang">
                 <div class="bowl__con">
-                  <h3>안양시청</h3>
+                  <h3>안양시청(1일)</h3>
                   <a href="" class="toggle--btn" data-trigger="anyang">기획서</a>
                   <a href="https://www.anyang.go.kr/main/index.do" target="_blank">원본</a>
                   <a href="">클론코딩 </a>
@@ -245,7 +246,7 @@
               <div class="bowl__item" data-type="oneday">
                 <img src="images/section/work/oneday/kistep.png" alt="kistep">
                 <div class="bowl__con">
-                  <h3>KISTEP</h3>
+                  <h3>KISTEP(1일)</h3>
                   <a href="" class="toggle--btn" data-trigger="kistep">기획서</a>
                   <a href="https://www.kistep.re.kr/main/" target="_blank">원본</a>
                   <a href="">클론코딩 </a>
@@ -278,8 +279,8 @@
               <!-- PORTFOLIO -->
               <div class="bowl__item" data-type="port">
                 <div class="bowl__con">
-                  <h3>선인화구</h3>
-                  <a href="" class="toggle--btn" data-trigger="burgerking">기획서</a>
+                  <h3>선인화구(3일)</h3>
+                  <a href="" class="toggle--btn" data-trigger="sunin">기획서</a>
                   <a href="#">완성</a>
                   <a href="#">git</a>
                 </div>
@@ -287,7 +288,7 @@
               <!-- LAB -->
               <div class="bowl__item" data-type="lab">
                 <div class="bowl__con">
-                  <h3>React 웹사이트 제작</h3>
+                  <h3>React 웹 제작(3일)</h3>
                   <a href="#" class="toggle--btn" data-trigger="react">기획서</a>
                   <a href="#">완성</a>
                   <a href="#">git</a>
@@ -295,67 +296,25 @@
               </div>
             </div>
           </div>
-
-
-
-
-
+          <!-- popup -->
           <div class="work__popup">
             <div class="popup__list">
-
-              <div class="popup__item" data-name="miwon">
-                <div class="popup__title">
-                  <form class="popup__form" method="get" action="doc/popup-data/snack_mockup.zip">
-                    <button class="popup--btn">                     
-                    <i class="fa-solid fa-floppy-disk"></i>
-                      <p>기획서_미원.zip</p>
-                    </button>
-                  </form>
-                  <i class="fa-solid fa-xmark"></i>
-                </div>
-                <div class="popup__cover">  
-                  <div class="popup__content">
-                    <img src="images/section/work/popup/miwon/Daesang_miwon.png" alt="miwon">
-                    <img src="images/section/work/popup/miwon/Daesang_miwon.png" alt="miwon">
-                    <img src="images/section/work/popup/miwon/Daesang_miwon.png" alt="miwon">
-                  </div>
-                </div>
-              </div>
 
               <div class="popup__item" data-name="anyang">
                 <div class="popup__title">
                   <form class="popup__form" method="get" action="doc/popup-data/snack_mockup.zip">
-                    <button class="popup--btn">                     
-                    <i class="fa-solid fa-floppy-disk"></i>
-                      <p>기획서_미원.zip</p>
+                    <button class="popup--btn">
+                      <i class="fa-solid fa-floppy-disk"></i>
+                      기획서_안양시청.zip
                     </button>
                   </form>
                   <i class="fa-solid fa-xmark"></i>
                 </div>
-                <div class="popup__cover">  
+                <div class="popup__cover">
                   <div class="popup__content">
-                    <img src="images/section/work/popup/anyang/Anyang.png" alt="anyang">
-                    <img src="images/section/work/popup/anyang/Anyang.png" alt="anyang">
-                    <img src="images/section/work/popup/anyang/Anyang.png" alt="anyang">
-                  </div>
-                </div>
-              </div>
-
-              <div class="popup__item" data-name="nexongames">
-                <div class="popup__title">
-                  <form class="popup__form" method="get" action="doc/popup-data/snack_mockup.zip">
-                    <button class="popup--btn">                     
-                    <i class="fa-solid fa-floppy-disk"></i>
-                      <p>기획서_미원.zip</p>
-                    </button>
-                  </form>
-                  <i class="fa-solid fa-xmark"></i>
-                </div>
-                <div class="popup__cover">  
-                  <div class="popup__content">
-                    <img src="images/section/work/popup/anyang/Anyang.png" alt="anyang">
-                    <img src="images/section/work/popup/anyang/Anyang.png" alt="anyang">
-                    <img src="images/section/work/popup/anyang/Anyang.png" alt="anyang">
+                    <img src="images/section/work/popup/anyang/Anyang.png" alt="anyangimg">
+                    <img src="images/section/work/popup/anyang/Anyang.png" alt="anyangimg">
+                    <img src="images/section/work/popup/anyang/Anyang.png" alt="anyangimg">
                   </div>
                 </div>
               </div>
@@ -363,33 +322,14 @@
               <div class="popup__item" data-name="kistep">
                 <div class="popup__title">
                   <form class="popup__form" method="get" action="doc/popup-data/snack_mockup.zip">
-                    <button class="popup--btn">                     
-                    <i class="fa-solid fa-floppy-disk"></i>
-                      <p>기획서_미원.zip</p>
+                    <button class="popup--btn">
+                      <i class="fa-solid fa-floppy-disk"></i>
+                      기획서_kistep.zip
                     </button>
                   </form>
                   <i class="fa-solid fa-xmark"></i>
                 </div>
-                <div class="popup__cover">  
-                  <div class="popup__content">
-                    <img src="images/section/work/popup/anyang/Anyang.png" alt="anyang">
-                    <img src="images/section/work/popup/anyang/Anyang.png" alt="anyang">
-                    <img src="images/section/work/popup/anyang/Anyang.png" alt="anyang">
-                  </div>
-                </div>
-              </div>
-              
-              <div class="popup__item" data-name="naver">
-                <div class="popup__title">
-                  <form class="popup__form" method="get" action="doc/popup-data/snack_mockup.zip">
-                    <button class="popup--btn">                     
-                    <i class="fa-solid fa-floppy-disk"></i>
-                      <p>기획서_미원.zip</p>
-                    </button>
-                  </form>
-                  <i class="fa-solid fa-xmark"></i>
-                </div>
-                <div class="popup__cover">  
+                <div class="popup__cover">
                   <div class="popup__content">
                     <img src="images/section/work/popup/anyang/Anyang.png" alt="anyang">
                     <img src="images/section/work/popup/anyang/Anyang.png" alt="anyang">
@@ -398,17 +338,17 @@
                 </div>
               </div>
 
-              <div class="popup__item" data-name="burgerking">
+              <div class="popup__item" data-name="sunin">
                 <div class="popup__title">
                   <form class="popup__form" method="get" action="doc/popup-data/snack_mockup.zip">
-                    <button class="popup--btn">                     
-                    <i class="fa-solid fa-floppy-disk"></i>
-                      <p>기획서_미원.zip</p>
+                    <button class="popup--btn">
+                      <i class="fa-solid fa-floppy-disk"></i>
+                      기획서_신안화구.zip
                     </button>
                   </form>
                   <i class="fa-solid fa-xmark"></i>
                 </div>
-                <div class="popup__cover">  
+                <div class="popup__cover">
                   <div class="popup__content">
                     <img src="images/section/work/popup/miwon/Daesang_miwon.png" alt="miwon">
                     <img src="images/section/work/popup/miwon/Daesang_miwon.png" alt="miwon">
@@ -416,37 +356,17 @@
                   </div>
                 </div>
               </div>
-
-              <div class="popup__item" data-name="hexagon">
-                <div class="popup__title">
-                  <form class="popup__form" method="get" action="doc/popup-data/snack_mockup.zip">
-                    <button class="popup--btn">                     
-                    <i class="fa-solid fa-floppy-disk"></i>
-                      <p>기획서_미원.zip</p>
-                    </button>
-                  </form>
-                  <i class="fa-solid fa-xmark"></i>
-                </div>
-                <div class="popup__cover">  
-                  <div class="popup__content">
-                    <img src="images/section/work/popup/miwon/Daesang_miwon.png" alt="miwon">
-                    <img src="images/section/work/popup/miwon/Daesang_miwon.png" alt="miwon">
-                    <img src="images/section/work/popup/miwon/Daesang_miwon.png" alt="miwon">
-                  </div>
-                </div>
-              </div>
-
               <div class="popup__item" data-name="react">
                 <div class="popup__title">
                   <form class="popup__form" method="get" action="doc/popup-data/snack_mockup.zip">
-                    <button class="popup--btn">                     
-                    <i class="fa-solid fa-floppy-disk"></i>
-                      <p>기획서_미원.zip</p>
+                    <button class="popup--btn">
+                      <i class="fa-solid fa-floppy-disk"></i>
+                      리엑트.zip
                     </button>
                   </form>
                   <i class="fa-solid fa-xmark"></i>
                 </div>
-                <div class="popup__cover">  
+                <div class="popup__cover">
                   <div class="popup__content">
                     <img src="images/section/work/popup/miwon/Daesang_miwon.png" alt="miwon">
                     <img src="images/section/work/popup/miwon/Daesang_miwon.png" alt="miwon">
@@ -454,52 +374,10 @@
                   </div>
                 </div>
               </div>
-
-              <div class="popup__item" data-name="googlePlay">
-                <div class="popup__title">
-                  <form class="popup__form" method="get" action="doc/popup-data/snack_mockup.zip">
-                    <button class="popup--btn">                     
-                    <i class="fa-solid fa-floppy-disk"></i>
-                      <p>기획서_미원.zip</p>
-                    </button>
-                  </form>
-                  <i class="fa-solid fa-xmark"></i>
-                </div>
-                <div class="popup__cover">  
-                  <div class="popup__content">
-                    <img src="images/section/work/popup/miwon/Daesang_miwon.png" alt="miwon">
-                    <img src="images/section/work/popup/miwon/Daesang_miwon.png" alt="miwon">
-                    <img src="images/section/work/popup/miwon/Daesang_miwon.png" alt="miwon">
-                  </div>
-                </div>
-              </div>
-
-              <div class="popup__item" data-name="db">
-                <div class="popup__title">
-                  <form class="popup__form" method="get" action="doc/popup-data/snack_mockup.zip">
-                    <button class="popup--btn">                     
-                    <i class="fa-solid fa-floppy-disk"></i>
-                      <p>기획서_미원.zip</p>
-                    </button>
-                  </form>
-                  <i class="fa-solid fa-xmark"></i>
-                </div>
-                <div class="popup__cover">  
-                  <div class="popup__content">
-                    <img src="images/section/work/popup/miwon/Daesang_miwon.png" alt="miwon">
-                    <img src="images/section/work/popup/miwon/Daesang_miwon.png" alt="miwon">
-                    <img src="images/section/work/popup/miwon/Daesang_miwon.png" alt="miwon">
-                  </div>
-                </div>
-              </div>
-              
             </div>
           </div>
-
-          
         </div>
       </div>
-      
     </section>
 
     <!-- section#contact -->
@@ -543,7 +421,7 @@
     </button>
   </div>
 
-  
+
 </body>
 
 </html>
