@@ -524,14 +524,6 @@
   font-family: "yg-jalnan";
 }
 
-#work .work__name:nth-child(2) {
-  cursor: pointer;
-}
-
-#work .work__name:nth-child(2):hover {
-  color: var(--c-gold);
-}
-
 #work .work__name.select {
   display: block;
 }
