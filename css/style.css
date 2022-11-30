@@ -193,7 +193,7 @@
 .gnb__toggle-btn {
   display: none;
   position: absolute;
-  top: 145%;
+  top: 140%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: transparent;
@@ -859,12 +859,14 @@
 
 /* Media Query */
 @media screen and (max-width: 1149px) {
+  /* work */
   #work .section__box {
     width: 890px;
   }
 }
 
 @media screen and (max-width: 895px) {
+  /* work */
   #work .section__box {
     width: 630px;
   }
@@ -883,7 +885,7 @@
 
   nav#gnb.gnb {
     height: 0;
-    margin-top: 45px;
+    margin-top: 40px;
     overflow: hidden;
     transition: height .3s ease-in-out;
   }
@@ -922,10 +924,6 @@
   }
 
   /* work */
-  #work .section__box {
-    width: 364px;
-  }
-
   #work .popup__item{    
     padding: 25px;
   }
@@ -945,8 +943,13 @@
   }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 609px) {
+  /* work */
   #work .section__box {
     width: auto;
+  }
+
+  #work .bowl {
+    gap: 60px 0;
   }
 }
