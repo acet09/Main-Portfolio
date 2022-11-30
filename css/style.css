@@ -501,6 +501,7 @@
   border: 1px solid transparent;
   transition: color .3s ease;
   opacity: 0.35;
+  letter-spacing: 2px;
 }
 
 #work .work__button .work__btns:hover {
@@ -522,6 +523,7 @@
   color: var(--fc-main);
   font-size: var(--fs-18);
   font-family: "yg-jalnan";
+  letter-spacing: 2px;
 }
 
 #work .work__name.select {
@@ -630,10 +632,10 @@
 #work .work__popup{
   max-width: 1150px;
   width: calc(100vw - 200px);
-  height: 75vh;
+  height: 85vh;
   margin: 0 auto;
   position: fixed;
-  top: 15%;
+  top: 10%;
   left: 0;
   right: 0;
   background-color: var(--c-white);
@@ -700,7 +702,7 @@
 }
 
 #work .popup__cover{
-  height: 60vh;
+  height: 68vh;
   border-radius: 5px;
   background-color: var(--c-gray);
   overflow-y: scroll;
@@ -726,6 +728,7 @@
   opacity: 0;
   pointer-events: none;
 }
+
 .toggle--bg.is-blacked-out {
   opacity: 1;
   z-index: 1000;  
@@ -755,8 +758,8 @@
   height: 185px;
   margin: 30px;
   display: flex;
+  flex-flow: column nowrap;
   justify-content: center;
-  flex-flow: column;
   align-items: center;
   border-radius: 50%;
   border: 5px double var(--c-sub3);
@@ -825,7 +828,7 @@
   width: 50px;
   height: 50px;
   position: fixed;
-  right: 25px;
+  right: 15px;
   bottom: 45px;
   text-align: center;
   line-height: 50px;
