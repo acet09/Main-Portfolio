@@ -193,7 +193,7 @@
 .gnb__toggle-btn {
   display: none;
   position: absolute;
-  top: 140%;
+  top: 135%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: transparent;
@@ -932,6 +932,16 @@
     top: 15px;
   }
   
+  #work .work__popup {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+  } 
+
+  #work .popup__cover {
+    height: 82vh;
+  }
+
   /* contact */
   #contact .contact__list {
     flex-direction: column;
