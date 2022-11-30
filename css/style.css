@@ -877,7 +877,7 @@
 @media screen and (max-width: 768px) {
   /* header */
   #headerbar, #headerbar.headerbar--fade {
-    padding: 15px 50px 0px;
+    padding: 15px 20px 0px;
     background-color: var(--c-main);
   }
 
@@ -947,6 +947,6 @@
 
 @media screen and (max-width: 650px) {
   #work .section__box {
-    width: 364px;
+    width: auto;
   }
 }
