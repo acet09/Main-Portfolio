@@ -193,7 +193,7 @@
 .gnb__toggle-btn {
   display: none;
   position: absolute;
-  top: 162%;
+  top: 145%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: transparent;
@@ -883,7 +883,7 @@
 
   nav#gnb.gnb {
     height: 0;
-    margin-top: 70px;
+    margin-top: 45px;
     overflow: hidden;
     transition: height .3s ease-in-out;
   }
