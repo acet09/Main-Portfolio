@@ -162,6 +162,7 @@
 
 .headerbar__blog img {
   width: 25px;
+  height: 25px;
   margin: 3px;
 }
 
@@ -193,7 +194,7 @@
 .gnb__toggle-btn {
   display: none;
   position: absolute;
-  top: 135%;
+  top: 150%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: transparent;
@@ -231,7 +232,7 @@
 
 /* home */
 #home {
-  padding: 310px 0 70px;
+  padding: 280px 0 70px;
   background: url("../images/section/home/sandland.png") no-repeat center/cover;
   cursor: default;
 }
@@ -477,9 +478,6 @@
 
 
 /* work */
-#work.section__cover {
-  padding: 190px 0px 110px;
-}
 
 #work .work__content {
   position: relative;
@@ -487,6 +485,20 @@
   flex-direction: column;
   justify-content: center;
 }
+
+#work .work__button {
+  margin: 0 auto;
+}
+
+
+#work .work__button .work_alone{
+  float: left;
+}
+
+#work .work__button .work_binding{
+  float: left;
+}
+
 
 #work .work__button button.active {
   color: var(--c-sub1);
@@ -509,7 +521,7 @@
 }
 
 #work .work__button .work__btns:hover {
-  color: var(--c-sub1);
+  color: var(--fc-sub2);
 }
 
 #work .fa-youtube {
@@ -636,10 +648,10 @@
 #work .work__popup{
   max-width: 1350px;
   width: calc(100vw - 100px);
-  height: 85vh;
+  height: 90vh;
   margin: 0 auto;
   position: fixed;
-  top: 10%;
+  top: 5%;
   left: 0;
   right: 0;
   background-color: var(--c-white);
@@ -707,7 +719,7 @@
 }
 
 #work .popup__cover{
-  height: 68vh;
+  height: 72vh;
   border-radius: 5px;
   background-color: var(--c-gray);
   overflow-y: scroll;
@@ -878,9 +890,13 @@
 }
 
 @media screen and (max-width: 768px) {
+  .section__cover {
+    padding: 120px 0px 100px;
+  }
+
   /* header */
   #headerbar, #headerbar.headerbar--fade {
-    padding: 15px 20px 0px;
+    padding: 10px 12px 0px;
     background-color: var(--c-main);
   }
 
@@ -896,6 +912,10 @@
     height: 290px;
   }
 
+  .headerbar__logo a span {
+    font-size: var(--fs-15);
+  }
+
   .gnb__list {
     flex-direction: column;
     align-items: center;
@@ -905,8 +925,29 @@
     display: block;
   }
 
+  .gnb__toggle-btn i {
+    font-size: var(--fs-20);
+  }
+  
+  .headerbar__contents .contactshot {
+    font-size: var(--fs-15);
+  }
+
   .headerbar__contents:nth-child(3) .m-text {
     display: none;
+  }
+
+  .headerbar__git i {
+    font-size: var(--fs-20);
+  }
+
+  .headerbar__blog img {
+    width: 21px;
+    height: 21px;
+  }
+  
+  .headerbar__git {
+    margin-right: 5px;
   }
 
   /* about */
@@ -925,6 +966,18 @@
   }
 
   /* work */
+  #work .work__button .work_alone{
+    float: unset;
+  }
+  
+  #work .work__button .work_binding{
+    float: unset;
+  }
+
+  #work .work__button .work__btns:hover {
+    color: var(--c-sub1);
+  }
+
   #work .popup__item{    
     padding: 25px;
   }
@@ -954,6 +1007,7 @@
   }
 }
 
+
 @media screen and (max-width: 609px) {
   /* work */
   #work .section__box {
@@ -962,5 +1016,26 @@
 
   #work .bowl {
     gap: 60px 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section__cover {
+    padding: 100px 0px 90px;
+  }
+
+  /* work */
+  #work .work__button .work__btns {
+    margin: 10px;
+    padding: 3px 10px;
+  }
+
+  #work .bowl {
+    padding: 20px 0px;
+  }
+
+  #work .bowl__item {
+    width: 220px;
+    height: 183px;
   }
 }

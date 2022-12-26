@@ -96,6 +96,7 @@ workName.forEach((workNum) => {
         work__name.classList.remove('select');
       }
     });
+    
   });
 });
 
@@ -111,7 +112,7 @@ toggleBtn.forEach(trigger => {
     const triggerSelect = document.querySelector(`[data-name="${triggerData}"]`);
     const triggerBody = document.querySelector('.work__popup');
     const windowscrollLock = document.getElementById('body');
-
+    
     triggerSelect.classList.add('is--visible');
     triggerBody.classList.add('is--visible');
     toggleBg.classList.add('is-blacked-out');
