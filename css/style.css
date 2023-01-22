@@ -196,7 +196,7 @@
 .gnb__list li {
   width: 96px;
   margin: 20px 25px 10px;
-  font-size: var(--fs-18);
+  font-size: 16px;
   font-family: "yg-jalnan";
   color: var(--fc-main);
   text-align: center;
@@ -210,7 +210,7 @@
 .gnb__toggle-btn {
   display: none;
   position: absolute;
-  top: 165%;
+  top: 215%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: transparent;
@@ -227,7 +227,7 @@
 
 /* section */
 .section__cover {
-  padding: 180px 70px 150px;
+  padding: 80px 70px;
   text-align: center;
 }
 
@@ -335,7 +335,7 @@
 }
 
 #about .about__list {
-  padding: 25px;
+  padding: 20px;
 }
 
 #about i {
@@ -351,7 +351,7 @@
 }
 
 #about h3 {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   font-size: var(--fs-20);
   color: var(--fc-main);
 }
@@ -360,7 +360,9 @@
   font-size: var(--fs-15);
   font-weight: var(--fw-300);
   word-spacing: 3px;
-  line-height: 21.6px;
+  line-height: 18px;
+  word-break: keep-all;
+  margin-bottom: 6px;
 }
 
 #about strong {
@@ -776,7 +778,6 @@
 }
 
 #contact h2.contact__title {
-  padding-bottom: 30px;
   color: var(--c-white);
 }
 
@@ -789,8 +790,8 @@
 }
 
 #contact .contact__content {
-  width: 185px;
-  height: 185px;
+  width: 165px;
+  height: 165px;
   margin: 30px;
   display: flex;
   flex-flow: column nowrap;
@@ -807,11 +808,11 @@
 
 #contact .contact__box i {
   margin-bottom: 10px;
-  font-size: 50px;
+  font-size: 40px;
 }
 
 #contact .contact__box img {
-  width: 55px;
+  width: 45px;
 }
 
 #contact .contact__box p {
@@ -823,7 +824,7 @@
 #contact .email__link i {
   margin: 0;
   color: var(--fc-sub1);
-  font-size: 80px;
+  font-size: 70px;
 }
 
 #contact .email__link p {
@@ -837,8 +838,8 @@
 }
 
 #contact .contact__list .contact__content {
-  width: 140px;
-  height: 140px;
+  width: 120px;
+  height: 120px;
   margin: 30px 100px;
 }
 
@@ -911,21 +912,28 @@
   }
 
   /* header */
+  .headerbar__box {
+    margin-bottom: 75px;
+  }
+
   #headerbar.headerbar--fade {
-    padding: 10px 12px 10px;
+    padding: 10px 12px 12px;
     background-color: var(--c-main);
+  }
+
+  #headerbar.headerbar--fade .gnb__list li {
+    margin: 20px 25px 10px;
   }
 
   nav#gnb.gnb {
     height: 0;
-    margin-top: 40px;
     overflow: hidden;
     transition: height .3s ease-in-out;
   }
 
   nav#gnb.open {
-    padding-bottom: 20px;
-    height: 290px;
+    padding-bottom: 0px;
+    height: 265px;
   }
 
   .headerbar__logo a span {

@@ -19,16 +19,36 @@ document.addEventListener('scroll', () => {
 });
 
 // navbar scrolling
-const headerscroll = document.querySelector('.gnb__list');
-headerscroll.addEventListener('click', (event) => {
-  const target = event.target.dataset.link;
-  if (target == null) {
-    return;
-  }  
-  scrollIntoViews(target);
-});
+// const headerscroll = document.querySelector('.gnb__list');
+// headerscroll.addEventListener('click', (event) => {
+//   const target = event.target.dataset.link;
+//   if (target == null) {
+//     return;
+//   }  
+//   scrollIntoViews(target);
+// });
 
 
+const navScrollBtn = document.querySelectorAll('.gnb__list__item');
+const sectionCover = document.querySelectorAll('.section__cover');
+for(let i = 0; i < navScrollBtn.length; i++) {
+  navScrollBtn[i].addEventListener('click', () => {
+    console.log(i);
+    const coverHeight = sectionCover[i].offsetTop - 127; 
+    window.scroll({
+      top: coverHeight,
+      behavior: "smooth",
+    });
+  });  
+}
+
+const spans = document.querySelectorAll("span");
+    const contents = document.querySelectorAll(".content");
+    for (let i = 0; i < spans.length; i++) {
+      spans[i].addEventListener('click', () => {
+        window.scroll({ top: contents[i].offsetTop - 50, behavior: "smooth" });
+      });
+    }
 
 //gnb slide
 const elem = document.getElementById("gnb");
