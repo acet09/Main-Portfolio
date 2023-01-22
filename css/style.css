@@ -61,21 +61,35 @@
 /* header */
 #headerbar {
   width: 100%;
-  padding: 25px 40px 35px;
+  padding: 25px 40px 10px;
   position: fixed;
-  background-color: transparent;
-  transition: all 0.5s ease-in-out;
+  background-color: var(--c-main);
+  transition: padding 0.5s ease-in-out;
   z-index: 999;
 }
 
 #headerbar.headerbar--fade {
   padding: 15px 15px 0px;
-  background-color: var(--c-main);
+}
+
+.gnb__list li {
+  width: 96px;
+  margin: 20px;
+  font-size: var(--fs-18);
+  font-family: "yg-jalnan";
+  color: var(--fc-main);
+  text-align: center;
+  cursor: pointer;
+  transition: margin 0.5s ease-in-out;
+}
+
+#headerbar.headerbar--fade .gnb__list li {
+  margin: 12px 20px;
 }
 
 /* headerbar */
 .headerbar__box {
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -106,6 +120,8 @@
   font-family: "Black Han Sans", sans-serif;
   color: var(--c-sub2);
 }
+
+
 
 .headerbar__contents {
   width: 180px;
@@ -179,7 +195,7 @@
 
 .gnb__list li {
   width: 96px;
-  margin: 20px 27px;
+  margin: 20px 25px 10px;
   font-size: var(--fs-18);
   font-family: "yg-jalnan";
   color: var(--fc-main);
@@ -211,7 +227,7 @@
 
 /* section */
 .section__cover {
-  padding: 190px 70px 110px;
+  padding: 180px 70px 150px;
   text-align: center;
 }
 
@@ -221,20 +237,20 @@
   font-family: "Black Han Sans", sans-serif;
   color: var(--fc-sub2);
   text-align: center;
+  margin-bottom: 35px;
   cursor: default;
   transition: all .5s ease-out;
 }
 
 .section__box {
-  max-width: 1150px;
+  max-width: 1020px;
   margin: 0 auto;
-  padding: 50px 30px;
   cursor: default;
 }
 
 /* home */
 #home {
-  padding: 280px 0 70px;
+  padding: 310px 0 70px;
   background: url("../images/section/home/sandland.png") no-repeat center/cover;
   cursor: default;
 }
@@ -493,11 +509,11 @@
 }
 
 
-#work .work__button .work_alone{
+#work .work__button .work_alone {
   float: left;
 }
 
-#work .work__button .work_binding{
+#work .work__button .work_binding {
   float: left;
 }
 
@@ -556,7 +572,7 @@
 }
 
 #work .bowl {
-  padding: 20px 35px;
+  padding-top: 20px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   justify-items: center;
@@ -647,7 +663,7 @@
   object-fit: cover;
 }
 
-#work .work__popup{
+#work .work__popup {
   max-width: 1350px;
   width: calc(100vw - 100px);
   height: 90vh;
@@ -662,23 +678,23 @@
   pointer-events: none;
 }
 
-#work .work__popup.is--visible{
+#work .work__popup.is--visible {
   opacity: 1;
   pointer-events: auto;
   z-index: 1010;
   transition: opacity .3s ease-in-out;
 }
 
-#work .popup__item{
+#work .popup__item {
   padding: 25px 50px;
   display: none;
 }
 
-#work .popup__item.is--visible{
+#work .popup__item.is--visible {
   display: block;
 }
 
-#work .popup__title{
+#work .popup__title {
   padding: 10px;
   margin-bottom: 30px;
   display: flex;
@@ -689,14 +705,14 @@
   transition: opacity .3s ease-in-out;
 }
 
-#work .fa-floppy-disk{
+#work .fa-floppy-disk {
   color: var(--fc-sub3);
   font-size: var(--fs-25);
   margin-right: 5px;
 }
 
-#work .popup--btn{
-  padding: 0;  
+#work .popup--btn {
+  padding: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -705,52 +721,52 @@
   transition: color .3s ease-in-out;
 }
 
-#work .popup--btn:hover{
+#work .popup--btn:hover {
   color: var(--c-sub1);
 }
 
-#work .fa-xmark{
+#work .fa-xmark {
   font-size: var(--fs-30);
   cursor: pointer;
   transition: color .2s ease-in-out;
 }
 
-#work .fa-xmark:hover{  
+#work .fa-xmark:hover {
   color: var(--c-sub1);
   overflow: auto;
 }
 
-#work .popup__cover{
+#work .popup__cover {
   height: 72vh;
   border-radius: 5px;
   background-color: var(--c-gray);
   overflow-y: scroll;
 }
 
-#work .popup__content{
+#work .popup__content {
   width: 100%;
 }
 
-#work .popup__content img{
+#work .popup__content img {
   width: 95%;
   padding: 10px 0;
 }
 
 .toggle--bg {
   width: 100vw;
-  height: 100vh;  
+  height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.65);
-  transition: opacity .3s ease-in-out;  
+  transition: opacity .3s ease-in-out;
   opacity: 0;
   pointer-events: none;
 }
 
 .toggle--bg.is-blacked-out {
   opacity: 1;
-  z-index: 1000;  
+  z-index: 1000;
   pointer-events: auto;
 }
 
@@ -877,21 +893,15 @@
 
 
 /* Media Query */
-@media screen and (max-width: 1290px) {
-  .section__cover {
-    padding: 150px 40px 110px;
-  }
-
-  /* work */
-  #work .section__box {
-    width: 890px;
+@media screen and (max-width: 1500px) {
+  .section__box {
+    max-width: 760px;
   }
 }
 
-@media screen and (max-width: 970px) {
-  /* work */
-  #work .section__box {
-    width: 630px;
+@media screen and (max-width: 1024px) {
+  .section__box {
+    max-width: 500px;
   }
 }
 
@@ -900,12 +910,8 @@
     font-size: var(--fs-30);
   }
 
-  .section__cover {
-    padding: 120px 50px 100px;
-  }
-
   /* header */
-  #headerbar, #headerbar.headerbar--fade {
+  #headerbar.headerbar--fade {
     padding: 10px 12px 10px;
     background-color: var(--c-main);
   }
@@ -938,11 +944,11 @@
   .gnb__toggle-btn i {
     font-size: var(--fs-20);
   }
-  
+
   .gnb__toggle-btn i:hover {
     color: var(--fc-main);
   }
-  
+
   .headerbar__contents .contactshot {
     font-size: var(--fs-15);
   }
@@ -963,7 +969,7 @@
     width: 23px;
     height: 23px;
   }
-  
+
   .headerbar__git {
     margin-right: 10px;
   }
@@ -984,15 +990,15 @@
   }
 
   /* work */
-  #work .work__button .work_alone{
+  #work .work__button .work_alone {
     float: unset;
   }
 
   #work .section__cover {
-    padding: 120px 0px 100px;
+    padding: 180px 0px 100px;
   }
-  
-  #work .work__button .work_binding{
+
+  #work .work__button .work_binding {
     float: unset;
   }
 
@@ -1000,19 +1006,19 @@
     color: var(--c-sub1);
   }
 
-  #work .popup__item{    
+  #work .popup__item {
     padding: 25px;
   }
-  
-  #work .popup__title{
+
+  #work .popup__title {
     top: 15px;
   }
-  
+
   #work .work__popup {
     width: 100vw;
     height: 100vh;
     top: 0;
-  } 
+  }
 
   #work .popup__cover {
     height: 82vh;
@@ -1032,22 +1038,13 @@
 
 @media screen and (max-width: 609px) {
   /* work */
-  #work .section__box {
-    width: auto;
-  }
-
   #work .bowl {
     gap: 60px 0;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .section__cover {
-    padding: 100px 0px 90px;
-  }
-
   /* work */
-
   #work .work__button .work__btns {
     margin: 10px;
     padding: 3px 10px;

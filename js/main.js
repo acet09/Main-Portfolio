@@ -6,7 +6,7 @@ const headerbarHeight = headerbar.getBoundingClientRect().height;
 document.addEventListener('scroll', () => {
   if (window.scrollY > headerbarHeight) {
     headerbar.classList.add('headerbar--fade');
-  } else {
+  } else {    
     headerbar.classList.remove('headerbar--fade');
   }
 });
@@ -24,9 +24,11 @@ headerscroll.addEventListener('click', (event) => {
   const target = event.target.dataset.link;
   if (target == null) {
     return;
-  }
+  }  
   scrollIntoViews(target);
 });
+
+
 
 //gnb slide
 const elem = document.getElementById("gnb");
@@ -145,10 +147,12 @@ toggleBtn.forEach(trigger => {
   });
 });
 
-//selector utility function
+//selector scrollIntoView utility function
 function scrollIntoViews(selector) {
   const scrollTo = document.querySelector(selector);
-  scrollTo.scrollIntoView({ behavior: "smooth" });
+  scrollTo.scrollIntoView({ 
+    behavior: "smooth",
+  });
 }
 
 
