@@ -18,37 +18,57 @@ document.addEventListener('scroll', () => {
   home.style.opacity = 1 - window.scrollY / homeHeight;
 });
 
+
 // navbar scrolling
-// const headerscroll = document.querySelector('.gnb__list');
-// headerscroll.addEventListener('click', (event) => {
-//   const target = event.target.dataset.link;
-//   if (target == null) {
-//     return;
-//   }  
-//   scrollIntoViews(target);
-// });
-
-
 const navScrollBtn = document.querySelectorAll('.gnb__list__item');
 const sectionCover = document.querySelectorAll('.section__cover');
-for(let i = 0; i < navScrollBtn.length; i++) {
-  navScrollBtn[i].addEventListener('click', () => {
-    console.log(i);
-    const coverHeight = sectionCover[i].offsetTop - 127; 
-    window.scroll({
-      top: coverHeight,
-      behavior: "smooth",
-    });
-  });  
-}
 
-const spans = document.querySelectorAll("span");
-    const contents = document.querySelectorAll(".content");
-    for (let i = 0; i < spans.length; i++) {
-      spans[i].addEventListener('click', () => {
-        window.scroll({ top: contents[i].offsetTop - 50, behavior: "smooth" });
+function winHeight() {
+  let valueHeight = 0;
+  if (window.innerWidth > 768) {
+    valueHeight = 125
+  } else {
+    valueHeight = 87
+  }
+  for (let i = 0; i < navScrollBtn.length; i++) {
+    navScrollBtn[i].addEventListener('click', () => {
+      const coverHeight = sectionCover[i].offsetTop - valueHeight;
+      window.scroll({
+        top: coverHeight,
+        behavior: "smooth",
       });
+    });
+  }
+}  
+winHeight();
+
+function winResposive() {
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 768) {
+      for (let i = 0; i < navScrollBtn.length; i++) {
+        navScrollBtn[i].addEventListener('click', () => {
+          const coverHeight = sectionCover[i].offsetTop - 125;
+          window.scroll({
+            top: coverHeight,
+            behavior: "smooth",
+          });
+        });
+      }
+    } else {
+      for (let i = 0; i < navScrollBtn.length; i++) {
+        navScrollBtn[i].addEventListener('click', () => {
+          const coverHeight = sectionCover[i].offsetTop - 87;
+          window.scroll({
+            top: coverHeight,
+            behavior: "smooth",
+          });
+        });
+      }
     }
+  });
+}
+winResposive();
+
 
 //gnb slide
 const elem = document.getElementById("gnb");
