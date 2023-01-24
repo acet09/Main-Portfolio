@@ -227,7 +227,7 @@
 
 /* section */
 .section__cover {
-  padding: 80px 70px;
+  padding: 60px 55px;
   text-align: center;
 }
 
@@ -250,7 +250,7 @@
 
 /* home */
 #home {
-  padding: 310px 0 70px;
+  padding: 240px 0 70px;
   background: url("../images/section/home/sandland.png") no-repeat center/cover;
   cursor: default;
 }
