@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>정용성 포트폴리오</title>
+  <link rel="shortcut icon" href="images/header/cactus_favicon.svg" type="image/icon">
+  <link rel="stylesheet" href="css/reset.css" type="text/css">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <script src="https://kit.fontawesome.com/a60ed959b1.js" crossorigin="anonymous"></script>
+  <script src="js/main.js" defer></script>
+</head>
+
+<body id="body">
+  <!-- toggle Background -->
+  <div class="toggle--bg"></div>
+  <div id="wrap">
+    <!-- header -->
+    <header id="headerbar">
+      <div class="headerbar__box">
+        <h1 class="headerbar__logo">
+          <a href="#">
+            <i class="fa-brands fa-hotjar"></i>
+            <span>Cactus</span>
+          </a>
+        </h1>
+        <div class="headerbar__contents">
+          <div class="headerbar__contact">
+            <span class="contactshot">Contact</span>
+          </div>
+        </div>
+        <div class="headerbar__contents">
+          <div class="headerbar__git">
+            <a href="https://github.com/acet09" target="_blank">
+              <i class="fa-brands fa-github"></i>
+              <span class="m-text">Github</span>
+            </a>
+          </div>
+          <div class="headerbar__blog">
+            <a href="https://blog.naver.com/ysjungman" target="_blank">
+              <img src="images/header/블로그2.png" alt="naver-blog">
+              <span class="m-text">Blog</span>
+            </a>
+          </div>
+        </div>
+
+        <button class="gnb__toggle-btn" onclick="slide();">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+      </div>
+      <nav id="gnb" class="gnb">
+        <ul class="gnb__list">
+          <li class="gnb__list__item active" data-link="#home">HOME</li>
+          <li class="gnb__list__item" data-link="#about">ABOUT</li>
+          <li class="gnb__list__item" data-link="#skills">SKILLS</li>
+          <li class="gnb__list__item" data-link="#work">WORK</li>
+          <li class="gnb__list__item" data-link="#contact">CONTACT</li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- home -->
+    <section id="home" class="section__cover">
+      <h2 class="txt-ir">home</h2>
+      <div class="home__box">
+        <div class="home__content">
+          <img src="images/section/home/cactus.png" alt="cactus-profile" class="home__main">
+        </div>
+        <div class="home__content">
+          <div class="home__title">안녕하세요.<br>만나서 반갑습니다.</div>
+          <p class="home__txt">#긍정적 &nbsp;&nbsp;#꾸준함 &nbsp;&nbsp;#시간약속</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- about -->
+    <section id="about" class="section__cover">
+      <h2 class="about__title section__title">About me</h2>
+      <div class="about__box section__box">
+        <div class="about__content">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <div class="about__list">
+            <h3>-연희직업전문학교-</h3>
+            <p>UIUX & 웹퍼블리셔[22.02.21~22.07.27]</p>
+          </div>
+          <strong>Graphic, HTML, CSS, Js</strong>
+        </div>
+        <div class="about__content">
+          <i class="fa-solid fa-address-card"></i>
+          <div class="about__list">
+            <p>포토샵GTQ1급</p>
+            <p>웹디자인기능사</p>
+          </div>
+          <strong>코딩 관련 자격증 공부 중입니다.</strong>
+        </div>
+        <div class="about__content">
+          <i class="fa-solid fa-desktop"></i>
+          <div class="about__list">
+            <h3>-드림코딩-</h3>
+            <p>포트폴리오 웹사이트 클론코딩</p>
+          </div>
+          <div class="about__list">
+            <h3>-Udemy-</h3>
+            <p>The Web Developer 부트캠프</p>
+            <p>React 완벽 가이드</p>
+            <p>Flutter & Dart - 완전한 안내서</p>
+          </div>
+          <strong>인터넷 강의로 개인 공부 중입니다.</strong>
+        </div>
+      </div>
+    </section>
+
+    <!-- skills -->
+    <section id="skills" class="section__cover">
+      <h2 class="skills__title section__title">Skills</h2>
+      <div class="skills__box section__box">
+        <div class="skills__contents">
+          <div class="skills__left">
+            <h3 class="skills__title">Skills</h3>
+            <div class="skills__list html">
+              <div class="skills__item item1">
+                <div class="skills__keep">
+                  <i class="fa-brands fa-html5"></i>
+                  <span>HTML</span>
+                </div>
+                <span>80%</span>
+              </div>
+              <div class="skills__bar bar1">
+                <div class="skills__value"></div>
+              </div>
+            </div>
+            <div class="skills__list css">
+              <div class="skills__item item2">
+                <div class="skills__keep">
+                  <i class="fa-brands fa-css3"></i>
+                  <span>CSS</span>
+                </div>
+                <span>70%</span>
+              </div>
+              <div class="skills__bar bar2">
+                <div class="skills__value"></div>
+              </div>
+            </div>
+            <div class="skills__list js">
+              <div class="skills__item item3">
+                <div class="skills__keep">
+                  <i class="fa-brands fa-js"></i>
+                  <span>Javascript</span>
+                </div>
+                <span>50%</span>
+              </div>
+              <div class="skills__bar bar3">
+                <div class="skills__value"></div>
+              </div>
+            </div>
+            <div class="skills__list React">
+              <div class="skills__item item3">
+                <div class="skills__keep">
+                  <i class="fa-brands fa-react"></i>
+                  <span>React</span>
+                </div>
+                <span>20%</span>
+              </div>
+              <div class="skills__bar bar3">
+                <div class="skills__value"></div>
+              </div>
+            </div>
+            <div class="skills__list graphic">
+              <div class="skills__item item4">
+                <div class="skills__keep">
+                  <i class="fa-solid fa-palette"></i>
+                  <span>Graphic</span>
+                </div>
+                <span>30%</span>
+              </div>
+              <div class="skills__bar bar4">
+                <div class="skills__value"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skills__right">
+            <div class="skills__list">
+              <h3 class="skills__title">Tools</h3>
+              <ul>
+                <li>Visual studio code</li>
+                <li>Photoshop</li>
+                <li>Illustrator</li>
+              </ul>
+            </div>
+            <div class="skills__list">
+              <h3 class="skills__title">Etc</h3>
+              <ul>
+                <li>C</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Mysql</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- work -->
+    <section id="work" class="section__cover">
+      <h2 class="work__title section__title">Wokr</h2>
+      <div class="work__box section__box">
+        <div class="work__content">
+
+          <div class="work__button">
+            <button class="work__btns work_alone active" data-filter="all">All</button>
+            <div class="work_binding">
+              <button class="work__btns" data-filter="oneday">작업물</button>
+              <button class="work__btns" data-filter="shot">소스</button>
+              <button class="work__btns" data-filter="lab">실험실</button>
+            </div>
+          </div>
+
+          <div class="work__list">
+            <div class="bowl__title">
+              <p class="work__name select" data-type="all">- All -</p>
+              <p class="work__name" data-type="oneday">- 작업물 -</p>
+              <p class="work__name" data-type="shot">- 소스 -</p>
+              <p class="work__name" data-type="lab">- 실험실 -</p>
+            </div>
+
+            <div class="bowl">
+              <!-- ONEDAY -->
+              <div class="bowl__item" data-type="oneday">
+                <img src="images/section/work/oneday/Sunin_art.png" alt="sunin_art">
+                <div class="bowl__con">
+                  <h3>선인art</h3>
+                  <a href="javascript:;" class="toggle--btn" data-trigger="sunin">기획서</a>
+                  <a href="https://www.acebed.com/main/index.do" target="_blank">원본</a>
+                  <a href="https://acet09.github.io/siart/" target="_blank">클론코딩 </a>
+                  <a href="https://github.com/acet09/siart" target="_blank">git</a>
+                </div>
+              </div>
+
+              <!-- SHOT -->
+              <div class="bowl__item" data-type="shot">
+                <img src="images/section/work/shot/slide-jquery.png" alt="slide">
+                <div class="bowl__con">
+                  <h3>Slide</h3>
+                  <a href="https://codepen.io/acet09/pen/abGZBoo" target="_blank">Jquery</a>
+                  <a href="https://codepen.io/acet09/pen/mdLwZMJ" target="_blank">Javascript</a>
+                </div>
+              </div>
+              
+              <!-- LAB -->
+              <div class="bowl__item" data-type="lab">
+                <div class="bowl__con">
+                  <h3>React App 개발/배포</h3>
+                  <a href="#" class="toggle--btn" data-trigger="react">기획서</a>
+                  <a href="#">완성</a>
+                  <a href="#">git</a>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          <!-- popup -->
+          <div class="work__popup">
+            <div class="popup__list">
+              <div class="popup__item" data-name="sunin">
+                <div class="popup__title">
+                  <form class="popup__form" method="get" action="doc/popup-data/snack_mockup.zip">
+                    <button class="popup--btn">
+                      <i class="fa-solid fa-floppy-disk"></i>
+                      기획서_신안화구.zip
+                    </button>
+                  </form>
+                  <i class="fa-solid fa-xmark"></i>
+                </div>
+                <div class="popup__cover">
+                  <div class="popup__content">
+                    <img src="images/section/work/oneday/Sunin_art.png" alt="sunin">
+                    <img src="images/section/work/oneday/Sunin_art.png" alt="sunin">
+                    <img src="images/section/work/oneday/Sunin_art.png" alt="sunin">
+                    <img src="images/section/work/oneday/Sunin_art.png" alt="sunin">
+                    <img src="images/section/work/oneday/Sunin_art.png" alt="sunin">
+                  </div>
+                </div>
+              </div>
+
+              <!-- <div class="popup__item" data-name="anyang">
+                <div class="popup__title">
+                  <form class="popup__form" method="get" action="doc/popup-data/snack_mockup.zip">
+                    <button class="popup--btn">
+                      <i class="fa-solid fa-floppy-disk"></i>
+                      기획서_선인art.zip
+                    </button>
+                  </form>
+                  <i class="fa-solid fa-xmark"></i>
+                </div>
+                <div class="popup__cover">
+                  <div class="popup__content">
+                    <img src="images/section/work/oneday/Sunin_art.png" alt="sunin">
+                    <img src="images/section/work/oneday/Sunin_art.png" alt="sunin">
+                    <img src="images/section/work/oneday/Sunin_art.png" alt="sunin">
+                    <img src="images/section/work/oneday/Sunin_art.png" alt="sunin">
+                    <img src="images/section/work/oneday/Sunin_art.png" alt="sunin">
+                  </div>
+                </div>
+              </div> -->
+              <!-- <div class="popup__item" data-name="kistep">
+                <div class="popup__title">
+                  <form class="popup__form" method="get" action="doc/popup-data/snack_mockup.zip">
+                    <button class="popup--btn">
+                      <i class="fa-solid fa-floppy-disk"></i>
+                      기획서_kistep.zip
+                    </button>
+                  </form>
+                  <i class="fa-solid fa-xmark"></i>
+                </div>
+                <div class="popup__cover">
+                  <div class="popup__content">
+                    <img src="images/section/work/oneday/Sunin_art.png" alt="sunin">
+                    <img src="images/section/work/oneday/Sunin_art.png" alt="sunin">
+                    <img src="images/section/work/oneday/Sunin_art.png" alt="sunin">
+                    <img src="images/section/work/oneday/Sunin_art.png" alt="sunin">
+                    <img src="images/section/work/oneday/Sunin_art.png" alt="sunin">
+                  </div>
+                </div>
+              </div> -->
+              <!-- <div class="popup__item" data-name="react">
+                <div class="popup__title">
+                  <form class="popup__form" method="get" action="doc/popup-data/snack_mockup.zip">
+                    <button class="popup--btn">
+                      <i class="fa-solid fa-floppy-disk"></i>
+                      리엑트.zip
+                    </button>
+                  </form>
+                  <i class="fa-solid fa-xmark"></i>
+                </div>
+                <div class="popup__cover">
+                  <div class="popup__content">
+                    <img src="images/section/work/oneday/Sunin_art.png" alt="sunin">
+                    <img src="images/section/work/oneday/Sunin_art.png" alt="sunin">
+                    <img src="images/section/work/oneday/Sunin_art.png" alt="sunin">
+                    <img src="images/section/work/oneday/Sunin_art.png" alt="sunin">
+                    <img src="images/section/work/oneday/Sunin_art.png" alt="sunin">
+                  </div>
+                </div>
+              </div> -->
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section#contact -->
+    <section id="contact" class="section__cover">
+      <h2 class="contact__title section__title">Contact me</h2>
+      <div class="contact__box section__box">
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ysjungman@gmail.com" target="_blank" class="contact__content email__link">
+            <i class="fa-solid fa-envelope"></i>
+            <p>E-mail</p>
+          </a>
+        <div class="contact__list">
+            <a href="https://github.com/acet09" target="_blank" class="contact__content github__link">
+              <i class="fa-brands fa-github"></i>
+              <p>Github</p>
+            </a>
+            <a href="https://blog.naver.com/ysjungman" target="_blank" class="contact__content blog__link">
+              <img src="images/header/블로그2.png" alt="naver-blog">
+              <p>Blog</p>
+            </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer id="footer__area">
+      <address class="footer__address">
+        <i class="footer__icon">🎋</i>
+        2022 CACTUS's SANDLAND
+      </address>
+    </footer>
+
+    <!-- Arrow Up-->
+    <button class="arrow-up">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+  </div>
+
+
+</body>
+
+</html>
