@@ -250,7 +250,7 @@
 
 /* home */
 #home {
-  padding: 240px 0 70px;
+  padding: 300px 0 70px;
   background: url("../images/section/home/sandland.png") no-repeat center/cover;
   cursor: default;
 }
@@ -911,6 +911,11 @@
     font-size: var(--fs-30);
   }
 
+  .section__cover {
+    padding: 60px 50px 80px;
+}
+
+
   /* header */
   .headerbar__box {
     margin-bottom: 35px;
@@ -1045,10 +1050,10 @@
 }
 
 
-@media screen and (max-width: 609px) {
+@media screen and (max-width: 600px) {
   /* work */
   #work .bowl {
-    gap: 60px 0;
+    gap: 60px;
   }
 }
 
